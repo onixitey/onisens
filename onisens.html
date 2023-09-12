@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OniSens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This is the logo -->
+    <div class="logo">
+        <a class="logo" href="#">OniSens</a>
+    </div>
+    
+    
+    <!--This is the Hamburger-->
+    <div class="hamburger-menu">
+
+        <input id="menu-toggle" type="checkbox">
+        <label class="menu-btn" for="menu-toggle">
+            <span></span>
+        </label>
+
+        <ul class="menu-box">
+            <li><a class="menu-item" href="https://discord.gg/zgZVh4S2mH">Discord</a></li>
+            <li><a class="menu-item" href="https://www.instagram.com/ivy_5z/">Instagram</a></li>
+            <li><a class="menu-item" href="#">Facebook</a></li>
+            <li><a class="menu-item" href="https://www.youtube.com/channel/UCv5fP5yms6pHlcEYQPw2Gng">Youtube</a></li>
+            <li><a class="menu-item" href="#">About</a></li>
+        </ul>
+    
+    </div>
+
+    <div class="text">
+        <h1>Touch</h1>
+        <h2>Sensitivity Converter</h2>
+
+        <div class="paragraph">
+            <p>Finally, after a long time, the first Touch Sensitivity Converter is available</p>
+        </div>
+        
+    </div>
+
+    <!--This is the options to select the game-->
+    <div>
+        <div class="selection">
+            <p>Convert from game</p>
+            <label>
+                <select id="from-game">
+                    <option>Call of Duty</option>
+                    <option>Combat Master</option>
+                    <option>PUBG MOBILE</option>
+                    <option>Farlight 84</option>
+                </select>
+            </label>
+        </div>
+        
+        
+        <div class="selection">
+            <p>Convert to game</p>
+            <label>
+                <select id="to-game">
+                    <option>Call of Duty</option>
+                    <option>Combat Master</option>
+                    <option>PUBG MOBILE</option>
+                    <option>Farlight 84</option>
+                </select>
+            </label>
+        </div>
+        
+
+        <input type="number" class="input-sens" placeholder="Enter Your Sensitivity"><button class="conv-btn" onclick="convertSens();">
+        Convert</button>
+        <div>
+            <p class="js-result"></p>
+        </div>
+    </div>
+
+
+    <!-- This is  where the Details are -->
+    <div class="info-div">
+        <div class="important">
+            <h2>Important</h2>
+            <ul>
+                <li>Use Fixed Speed option in both games if available</li>
+                <li>For PUBG turn off Horizontal mouse acceleration</li>
+                <li>This Converter only works on Hip-Fire</li>
+            </ul>
+
+        </div>
+
+        <div class="about">
+            <h2>About</h2>
+            <p>This touch sensitivity converter allows you to convert sensitivities between games. 
+                This means that you’ll be able to take a game’s 360 rotation and transfer it precisely into another game. The major benefit to doing so is that you’ll be able to keep your hard-earned muscle memory throughout any game you play.</p>
+        </div>
+
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
